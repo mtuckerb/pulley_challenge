@@ -1,0 +1,96 @@
+2024-06-05T15:33:05,728: [listener] Watchman 2024.01.22.00 <no build info set> starting up on Tuckers-Mac-Studio.local by command /sbin/launchd
+2024-06-05T15:33:05,728: [listener] path /Users/mtuckerb/workspace/mtuckerb/pulley_challenge is on filesystem type apfs
+2024-06-05T15:33:05,728: [listener] failed to use watcher kqueue+fsevents: Not using the kqueue+fsevents watcher as the "prefer_split_fsevents_watcher" config isn't set.
+2024-06-05T15:33:05,728: [listener] root /Users/mtuckerb/workspace/mtuckerb/pulley_challenge using watcher mechanism fsevents (auto was requested)
+2024-06-05T15:33:05,729: [listener] file limit is 2560 kern.maxfilesperproc=245760
+2024-06-05T15:33:05,729: [listener] raised file limit to 245760
+2024-06-05T15:33:05,730: [sanitychecks] starting sanityCheckThread
+2024-06-05T15:33:05,732: [io 5476737288 /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] PERF: {"user_time": 0.00047600000000000002, "start_time": 1717615985.7297969, "elapsed_time": 0.002379, "version": "2024.01.22.00", "system_time": 0.0021549999999999998, "meta": {"root": {"recrawl_count": 0, "case_sensitive": false, "watcher": "fsevents", "path": "/Users/mtuckerb/workspace/mtuckerb/pulley_challenge"}}, "pid": 6153, "description": "full-crawl"}
+2024-06-05T15:33:05,732: [io 5476737288 /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] crawl complete
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] ChildProcess: pid=0
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[0] bun run app.js
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[1] app.js
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[0] PATH=/Users/mtuckerb/.local/share/mise/installs/bun/1.1.10/bin:/Users/mtuckerb/.local/share/mise/installs/node/latest/bin:/Users/mtuckerb/.local/share/mise/installs/rust/1.78.0/bin:/Users/mtuckerb/.local/share/mise/installs/watchexec/latest/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/mtuckerb/.nix-profile/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[1] XDG_CONFIG_HOME=/Users/mtuckerb/.config
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[2] TMPDIR=/var/folders/vs/17skjxkn6n57scnckd8j6_xr0000gn/T/
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[3] SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.qBlj3DTviM/Listeners
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[4] __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[5] WATCHMAN_TRIGGER=buildme
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[6] XPC_FLAGS=0x0
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[7] LOGNAME=mtuckerb
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[8] WATCHMAN_CLOCK=c:1717615985:6153:1:3
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[9] XPC_SERVICE_NAME=com.github.facebook.watchman
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[10] HOME=/Users/mtuckerb
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[11] WATCHMAN_ROOT=/Users/mtuckerb/workspace/mtuckerb/pulley_challenge
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[12] WATCHMAN_SOCK=/tmp/mtuckerb-state/sock
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[13] SHELL=/bin/zsh
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[14] USER=mtuckerb
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] trigger /Users/mtuckerb/workspace/mtuckerb/pulley_challenge:buildme failed: posix_spawnp: No such file or directory
+2024-06-05T15:33:05,762: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] posix_spawnp: buildme
+2024-06-05T15:33:13,198: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] ChildProcess: pid=0
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[0] bun run app.js
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[1] app.js
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[0] PATH=/Users/mtuckerb/.local/share/mise/installs/bun/1.1.10/bin:/Users/mtuckerb/.local/share/mise/installs/node/latest/bin:/Users/mtuckerb/.local/share/mise/installs/rust/1.78.0/bin:/Users/mtuckerb/.local/share/mise/installs/watchexec/latest/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/mtuckerb/.nix-profile/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[1] XDG_CONFIG_HOME=/Users/mtuckerb/.config
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[2] TMPDIR=/var/folders/vs/17skjxkn6n57scnckd8j6_xr0000gn/T/
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[3] SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.qBlj3DTviM/Listeners
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[4] WATCHMAN_TRIGGER=buildme
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[5] WATCHMAN_SINCE=c:1717615985:6153:1:3
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[6] __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[7] XPC_FLAGS=0x0
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[8] LOGNAME=mtuckerb
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[9] WATCHMAN_CLOCK=c:1717615985:6153:1:5
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[10] XPC_SERVICE_NAME=com.github.facebook.watchman
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[11] HOME=/Users/mtuckerb
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[12] WATCHMAN_ROOT=/Users/mtuckerb/workspace/mtuckerb/pulley_challenge
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[13] WATCHMAN_SOCK=/tmp/mtuckerb-state/sock
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[14] SHELL=/bin/zsh
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[15] USER=mtuckerb
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] trigger /Users/mtuckerb/workspace/mtuckerb/pulley_challenge:buildme failed: posix_spawnp: No such file or directory
+2024-06-05T15:33:13,199: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] posix_spawnp: buildme
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] ChildProcess: pid=0
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[0] bun run app.js
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[1] app.js
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[0] PATH=/Users/mtuckerb/.local/share/mise/installs/bun/1.1.10/bin:/Users/mtuckerb/.local/share/mise/installs/node/latest/bin:/Users/mtuckerb/.local/share/mise/installs/rust/1.78.0/bin:/Users/mtuckerb/.local/share/mise/installs/watchexec/latest/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/mtuckerb/.nix-profile/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[1] XDG_CONFIG_HOME=/Users/mtuckerb/.config
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[2] TMPDIR=/var/folders/vs/17skjxkn6n57scnckd8j6_xr0000gn/T/
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[3] SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.qBlj3DTviM/Listeners
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[4] WATCHMAN_TRIGGER=buildme
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[5] WATCHMAN_SINCE=c:1717615985:6153:1:5
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[6] __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[7] XPC_FLAGS=0x0
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[8] LOGNAME=mtuckerb
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[9] WATCHMAN_CLOCK=c:1717615985:6153:1:7
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[10] XPC_SERVICE_NAME=com.github.facebook.watchman
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[11] HOME=/Users/mtuckerb
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[12] WATCHMAN_ROOT=/Users/mtuckerb/workspace/mtuckerb/pulley_challenge
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[13] WATCHMAN_SOCK=/tmp/mtuckerb-state/sock
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[14] SHELL=/bin/zsh
+2024-06-05T15:33:14,651: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[15] USER=mtuckerb
+2024-06-05T15:33:14,652: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] trigger /Users/mtuckerb/workspace/mtuckerb/pulley_challenge:buildme failed: posix_spawnp: No such file or directory
+2024-06-05T15:33:14,652: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] posix_spawnp: buildme
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] ChildProcess: pid=0
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[0] bun run app.js
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] argv[1] app.js
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[0] PATH=/Users/mtuckerb/.local/share/mise/installs/bun/1.1.10/bin:/Users/mtuckerb/.local/share/mise/installs/node/latest/bin:/Users/mtuckerb/.local/share/mise/installs/rust/1.78.0/bin:/Users/mtuckerb/.local/share/mise/installs/watchexec/latest/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/mtuckerb/.nix-profile/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[1] XDG_CONFIG_HOME=/Users/mtuckerb/.config
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[2] TMPDIR=/var/folders/vs/17skjxkn6n57scnckd8j6_xr0000gn/T/
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[3] SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.qBlj3DTviM/Listeners
+2024-06-05T15:33:15,693: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[4] WATCHMAN_TRIGGER=buildme
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[5] WATCHMAN_SINCE=c:1717615985:6153:1:7
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[6] __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[7] XPC_FLAGS=0x0
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[8] LOGNAME=mtuckerb
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[9] WATCHMAN_CLOCK=c:1717615985:6153:1:9
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[10] XPC_SERVICE_NAME=com.github.facebook.watchman
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[11] HOME=/Users/mtuckerb
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[12] WATCHMAN_ROOT=/Users/mtuckerb/workspace/mtuckerb/pulley_challenge
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[13] WATCHMAN_SOCK=/tmp/mtuckerb-state/sock
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[14] SHELL=/bin/zsh
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] envp[15] USER=mtuckerb
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] trigger /Users/mtuckerb/workspace/mtuckerb/pulley_challenge:buildme failed: posix_spawnp: No such file or directory
+2024-06-05T15:33:15,694: [trigger buildme /Users/mtuckerb/workspace/mtuckerb/pulley_challenge] posix_spawnp: buildme
+2024-06-05T15:33:40,099: [client=3:stm=105553119854592:pid=6747] shutdown-server was requested, exiting!
+2024-06-05T15:33:40,870: [sanitychecks] done with sanityCheckThread
+2024-06-05T15:33:44,761: [listener] 1 roots were still live at exit
+2024-06-05T15:33:44,762: [listener] Exiting from service with res=true

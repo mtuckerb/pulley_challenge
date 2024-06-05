@@ -1,0 +1,12 @@
+{
+  "name": "pulley_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "base-64": "^1.0.0",
+    "bun": "^1.1.12",
+    "msgpack-lite": "^0.1.26"
+  }
+}
