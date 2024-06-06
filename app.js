@@ -55,7 +55,6 @@ const start = async (path, counter) => {
       let result = [] ; 
       for (let i = 0; i < order.length; i++) { 
         result[order[i]] = scrambled[i];
-        console.log(`result: ${result[i]}, scrambled: ${scrambled[i]}, i: ${i}}`)
       }
       next_path += result.join('');
       break;
