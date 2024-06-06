@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 import msgpack from 'msgpack-lite';
-const BASE_URL = 'https://ciphersprint.pulley.com/';
+const BASE_URL = 'https://ciphersprint.pulley.com';
 
 const start = async (path, counter) => {
   if (counter > 40) {console.log("done") ; return response};
@@ -12,7 +12,8 @@ const start = async (path, counter) => {
   try {
     response = await get_encrypted_path(path);
   } catch (e) {
-     return response
+    console.log(`    ⛔️ ${e}`);
+     return e?.message;
   };
  
   console.log(`💡 response:`);
@@ -53,11 +54,14 @@ const start = async (path, counter) => {
       let scrambled = challenge_string.split('');
       let result = [] ; 
       for (let i = 0; i < order.length; i++) { 
-        result.splice(i, 0, scrambled[i]) 
+        result[order[i]] = scrambled[i];
+        console.log(`result: ${result[i]}, scrambled: ${scrambled[i]}, i: ${i}}`)
       }
       next_path += result.join('');
       break;
-
+    case response.encryption_method.includes("sha256"):
+      next_path += bruteForceSha256(challenge_string); 
+      console.log(`🤣: ${next_path}`);
     default:
       console.log(`⛔️ algorithm: ${response.encryption_method} not yet implemented`);
       break;
@@ -66,7 +70,7 @@ const start = async (path, counter) => {
   let then = new Date().getTime();
   let new_response = await start(next_path, counter+1);
   let now = new Date().getTime();
-  console.log(`execution time for ${counter}: ${now - then}ms`);
+  console.log(`execution time for ${counter} : ${path}: ${now - then}ms`);
   return new_response, counter
 }
 
@@ -105,6 +109,38 @@ export const xorDecrypt = (data, key) => {
   return result;
 }
 
+const crypto = require('crypto');
+
+// Function to generate the SHA-256 hash of a given input
+function sha256(input) {
+  return crypto.createHash('sha256').update(input).digest('hex');
+}
+
+// Function to brute force a SHA-256 hash given a target hash
+function bruteForceSha256(targetHash) {
+  const charset = '0123456789abcdef';
+  const maxLen = 32; // 32-bit string in hexadecimal (4 bytes * 2 hex digits/byte = 8 hex digits)
+
+  // Helper function to generate all combinations of the given length
+  function* generateCombinations(length, prefix = '') {
+    if (length === 0) {
+      yield prefix;
+    } else {
+      for (let char of charset) {
+        yield* generateCombinations(length - 1, prefix + char);
+      }
+    }
+  }
+
+  // Iterate through all possible combinations
+  for (let combination of generateCombinations(maxLen)) {
+    if (sha256(combination) === targetHash) {
+      return combination;
+    }
+  }
+
+  return null; // No match found
+}
 
 try {
    await start("tucker@tuckerbradford.com", 0);
